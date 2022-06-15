@@ -48,11 +48,12 @@
     grid-gap: 1.2rem;
     padding: 3rem 0rem 0rem 0rem;
 }
-.chat-btn{
+.hero-btn .chat-btn{
     color: #5ab5de;
     padding: 12px 24px;
     background-color: #fff;
-    border: none;
+    border: solid 1px;
+    border-color: #5ab5de;
     border-radius: 8px;
     font-size: 1rem;
     transition: .4s;
