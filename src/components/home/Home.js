@@ -14,7 +14,7 @@ const Home = () => {
             <button className='chat-btn'> Unlimited Chat</button>
             </div>
         </div>
-    </div>
+      </div>
 
     )
 }
