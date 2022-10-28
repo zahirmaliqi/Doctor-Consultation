@@ -7,7 +7,7 @@ import Articles from './components/articles/Articles'
 import Footer from './components/footer/Footer'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'; 
 import New from './components/new/New'
-import LogInForm from './components/LogIn/LogInForm'
+// import LogInForm from './components/LogIn/LogInForm'
 
 function App() {
   const adminUser = {
@@ -26,30 +26,30 @@ function App() {
     console.log("LogOut ");
   }
   return (
-    // <Router>
-    // <>
-    // <Switch>
-    //   <Route exact path="/">
-    //  <Navbar/>
-    //  <Home/> 
-    //  <Services/>
-    //  <Articles/>
-    //  <Footer/>
-    //  </Route>
+    <Router>
+    <>
+    <Switch>
+      <Route exact path="/">
+     <Navbar/>
+     <Home/> 
+     <Services/>
+     <Articles/>
+     <Footer/>
+     </Route>
     
-    //   <Route exact path="/new">
-    //   <Navbar/>
-    //   <New/>
-    //  </Route>
-    //  </Switch>
-    // </>
-    // </Router>
-    <div> 
-      {(user.useremail != "") ? (<div>
-        <h2>Welcome, <span>{user.name}</span></h2>
-        <button>LogOut</button>
-      </div>) :(<LogInForm/>)}
-    </div>
+      <Route exact path="/new">
+      <Navbar/>
+      <New/>
+     </Route>
+     </Switch>
+    </>
+    </Router>
+    // <div> 
+    //   {(user.useremail != "") ? (<div>
+    //     <h2>Welcome, <span>{user.name}</span></h2>
+    //     <button>LogOut</button>
+    //   </div>) :(<LogInForm/>)}
+    // </div>
   );
 }
 
